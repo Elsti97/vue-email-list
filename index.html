@@ -14,12 +14,27 @@
 </head>
 <body>
 
-  <div></div>
+  <div id="root">
+    <div class="d-flex justify-content-center my-3">
+      <button class="btn btn-primary p-3" @click="genera">Genera 10 Email</button>
+    </div>
+    <div class="d-flex justify-content-center">
+        <h2>Emails:</h2>
+        <ol class="flex-column">
+          <li v-for="(element,index) in arrayEmail">
+            {{arrayEmail[index]}}
+          </li>
+        </ol>
+        
+    </div>
+  </div>
 
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <!-- VUE.JS -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- AXIOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- MY JS -->
   <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
